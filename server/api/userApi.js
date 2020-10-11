@@ -19,6 +19,21 @@ var jsonWrite = function(res, ret) {
     }
 };
 
+// add location
+router.post('/add_location', (req, res) => {
+    var sql = $sql.user.add;
+    var params = req.body;
+    console.log(params);
+    conn.query(sql, [params.location], function(err, result) {
+        if (err) {
+            console.log(err);
+        }
+        if (result) {
+            jsonWrite(res, result);
+        }
+    })
+});
+
 // 增加用户接口
 router.post('/addUser', (req, res) => {
     var sql = $sql.user.add;

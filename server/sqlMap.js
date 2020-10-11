@@ -18,7 +18,8 @@ var sqlMap = {
       update_channelname: 'update channels set devName=? where devID=?',
       delete_channel: 'delete from channels where devName=?',
       delete_all_channel: 'delete from channels',
-      select_devname: 'select devName from devinfor'
+      select_devname: 'select devName from devinfor',
+      add_location: 'insert into location(devID) value (?)',
   }
 }
 

@@ -1,4 +1,6 @@
-# monitorcomponent
+#Vue.js + node.js + Google map API to build a single webpage for add/delete mark on map
+
+## monitorcomponent
 
 ##### First of all, go to /bigfoot/server
 ### node index.js

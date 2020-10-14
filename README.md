@@ -16,9 +16,12 @@ npm install
 npm run serve
 ```
 ### If error
+```
 rm -rf node_modules
+```
+```
 npm install
-
+```
 
 ### Compiles and minifies for production
 ```

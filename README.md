@@ -1,5 +1,9 @@
 # monitorcomponent
 
+##### First of all, go to /bigfoot/server
+### node index.js
+## Then go back to /bigfoot
+
 ## Project setup
 ```
 npm install
@@ -9,6 +13,10 @@ npm install
 ```
 npm run serve
 ```
+### If error
+rm -rf node_modules
+npm install
+
 
 ### Compiles and minifies for production
 ```

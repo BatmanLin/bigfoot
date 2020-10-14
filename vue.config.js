@@ -1,6 +1,6 @@
 module.exports = {
   runtimeCompiler: true,
-  publicPath: '/', 
+  publicPath: './', 
   devServer: {
     // open: process.platform === 'darwin',
     // host: 'localhost',
@@ -8,19 +8,12 @@ module.exports = {
     // open: true, 
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:3000/api/', 
+        target: 'http://ec2-3-15-39-162.us-east-2.compute.amazonaws.com:3000/api/', 
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
       },      
-      '/libs': {
-        target: 'http://crg.wiseom.cn/libs/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/libs': ''
-        }
-      }
     }
   },
 }
